@@ -16,7 +16,7 @@ export default function Upload({ setData }: any) {
       const formData = new FormData();
       formData.append("file", fileToUse);
 
-      const res = await fetch("http://127.0.0.1:8000/upload", {
+      const res = await fetch("https://lexiaudit.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
